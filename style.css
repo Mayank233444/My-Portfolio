@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: font;
+    src: url(/Font/MAK.0f20b8b.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(/Font/CircularXXWeb-Book.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(/Font/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(/Font/dff6ae7a2978d569-s.p.ttf);
+}
+@font-face {
+    font-family: font5;
+    src: url(/Font/ReviewPoster-Regular-Web.ttf);
+}
+@font-face {
+    font-family: font6;
+    src: url(/Font/ConfilliaBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+ /* background-color: rgba(250, 235, 215, 0.104); */
+ background-color: #EDE8E4;
+ overflow-x: hidden;
+}
+
+.web-wrapper{
+    /* width: 100%;
+    height: 100%;
+    position: relative; */
+    overflow: hidden;
+    
+}
+
+.cursor{
+ width: 3vw;
+ height: 3vw;
+ background-color: rgb(255, 128, 0);
+ position: fixed;
+ border-radius: 50%;
+filter: blur(3.5px);
+z-index: 7;
+}
+.navbar{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    position: absolute;
+    align-items: center;
+    z-index: 8;
+    /* background-color: rgba(250, 228, 199, 0.34); */
+    backdrop-filter: blur(10px);
+
+}
+.navbar .logo h1{
+ font-family:"Leckerli One", cursive;
+ font-weight: 200;
+ font-size: 2rem;
+}
+.navbar .links{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.navbar .links ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    list-style: none;
+    position: relative;
+}
+
+.navbar .links ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: font4;
+    font-size: 2.4rem;
+    transition: 0.3s;
+    position: relative;
+    padding: 0 3px;
+    letter-spacing:0.05rem;
+}
+
+.navbar .links ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 3px;
+    left: 0px;
+    bottom: 0.3px;
+    transition: 0.3s;
+}
+
+.navbar .links ul li a:hover:after{
+    width: 100%;
+}
+
+/* .page{
+    width: 100%;
+    height: 100%;
+} */
+.page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+   background-image: url(/images/bg11.png);
+   
+}
+.page1 h1{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30rem;
+    white-space: nowrap;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url(/images/bg22.png);
+}
+
+.page2 .left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    padding-top: 40rem;
+    font-family: "Poppins",serif;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.page2 .left h3{
+    font-size: 3rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.page2 .left h3 .element{
+    color: rgb(255, 115, 0);
+    white-space: nowrap;
+}
+
+.page2 .left h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(255, 115, 0);
+}
+
+.page2 .left p{
+    width: 85%;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    white-space:normal;
+    font-family: font3;
+    color: #0D0D11;
+}
+
+.page2 .left .real-text{
+    position: absolute;
+    bottom: 20%;
+    opacity: 0.2;
+    overflow: hidden;
+    scale: 0.5;
+    transform: translateX(-100vw);
+    font-family: font2;
+    
+}
+
+
+
+
+
+.page2 .left .social-media{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    position: absolute;
+    top: 80%;
+}
+
+
+.page2 .left .social-media a{
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ width: 4rem;
+ height:4rem;
+ text-decoration: none;
+ 
+ position: relative;
+ 
+}
+
+.page2 .left .social-media a i{
+    border: 0.15rem solid rgb(0, 41, 153);
+ border-radius: 20%;
+ padding: 0.15rem;
+ 
+    font-size: 2rem;
+    color: rgb(0, 41, 153);
+    
+
+}
+
+
+.page2 .left .social-media a.linkedin::after{
+    content: url(/images/icons8-linkedin-48.png);
+    position: absolute;
+    
+    width: 0%;
+    height: 3rem;
+    right: 85%;
+    /* left: 5.5rem; */
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.page2 .left .social-media a.linkedin:hover:after{
+    opacity: 1;
+    
+}
+
+
+.page2 .left .social-media a.instagram::after{
+    content: url(/images/icons8-instagram-48.png);
+    position: absolute;
+    
+    width: 0%;
+    height: 3rem;
+    right: 85%;
+    /* left: 13.6rem; */
+    opacity: 0;
+    transition: 0.7s; 
+}
+
+.page2 .left .social-media a.instagram:hover:after{
+    opacity: 1;
+}
+
+.page2 .left .social-media a.github::after{
+    content: url(/images/github-square.38px.png);
+    position: absolute;
+    
+    width: 0%;
+    height: 3rem;
+    margin-top: 0.6rem;
+    right: 79%;
+    /* left: 22rem; */
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.page2 .left .social-media a.github:hover:after{
+    opacity: 1;
+}
+
+.page2 .right{
+    width: 50%;
+    height: 100vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.page2 .right img{
+    background-color: rgba(250, 235, 215, 0.104);
+    width: 90%;
+    height: 70%;
+    
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(/images/bg3.png);
+    overflow: hidden;
+}
+.top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #EDE8E4;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url(/images/bg33.png);
+}
+.center{
+    width: 100%;
+    height: 100vh;
+    background-color: #3c79a249;
+    background-color: #2f747469;
+    display: flex;
+    overflow: hidden;
+}
+.bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color:#EDE8E4;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url(/images/bg33.png);
+    
+}
+.page3 h1{
+    font-family: "Anton SC", sans-serif;
+    font-size: 20rem;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.top-h{
+    bottom: 13%;
+    color: black;
+}
+
+.bottom-h{
+    top: 0% !important;
+    color: black;
+}
+
+.techskills-content{
+    margin-top: 10vh;
+}
+.center .techskills-content .techskills{
+    font-family: font;
+    font-weight: 700;
+    font-size: 4.5rem;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.left-skills{
+    width: 50%;
+    height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* justify-content: center; */
+ position: relative;
+}
+
+.tech-bars{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: space-between;
+   margin-top: 2vw;
+   padding-left: 8vw;
+   margin-bottom: 2vw;
+}
+.tech-bars .bars{
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+
+.tech-bars .info{
+    margin-top: -3vh;
+    font-family: font2 ;
+   
+
+}
+.tech-bars .info span{
+    font-size: 1.2vw;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.tech-bars .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 70%;
+    height: 1vh;
+    background-color: rgba(255, 255, 255, 0.412);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1); 
+    }
+}
+
+
+.tech-bars .progress-line span{
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left; 
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 95%;
+}
+.progress-line.javascript span{
+    width: 75%;
+}
+.progress-line.cpp span{
+    width: 65%;
+}
+.progress-line.react span{
+    width: 30%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "95%";
+}
+.progress-line.javascript span::after{
+    content: "75%";
+}
+.progress-line.cpp span::after{
+    content: "65%";
+}
+.progress-line.react span::after{
+    content: "30%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top:-10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.right-skills{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: font;
+    font-size: 2rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 4vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.page4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(/images/Untitled\ design.png);
+    background-repeat: no-repeat;
+    
+    background-color: #FFFFFF;
+}
+/* .page4 img{
+    filter: brightness(0) saturate(100%);
+    position: absolute;
+    margin-top: 3rem;
+} */
+.page4a{
+    width: 100%;
+    height: 100%;
+    /* position: relative;
+    z-index: 1; */
+    background-image: url(/images/Untitled\ design.png);
+    background-color: #FFFFFF;
+    
+}
+/* .page4b{
+    width: 100%;
+    height: 100%;
+    /* position: relative;
+    z-index: 1; */
+
+
+
+
+.page4 .text-skills{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20% 15%;
+   
+    
+}
+
+.page4 .text-skills p{
+    width: 100%;
+    height: 100%;
+    font-family: font5;
+    word-spacing: 0.4rem;
+    font-size: 10rem;
+    
+    font-weight: 600;
+    color: #257878;
+    position: relative;
+    bottom: 10rem;
+    right: 10rem;
+    text-align:right ;
+    /* z-index: 1; */
+    
+    
+}
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(/images/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.my-work-txt{
+    position: absolute;
+    width: 60vw;
+    height: 0vh;
+   
+    
+   
+}
+.my{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    transform: translate(-20% , -50%);
+    font-family: font2;
+    color: white;
+    font-size: 5vw ;
+    z-index: 3;
+}
+.work{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    transform: translate(20% , 50%);
+    font-family: font2;
+    color: white;
+    font-size: 5vw ;
+    z-index: 3;
+}
+
+.my-work-txt-div{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 0vh;
+    position: relative;     
+    background-color: white;
+}
+
+.scroll-work{
+    width: 100%;
+    height: 60vh;
+    background-color: lavender;
+    overflow: hidden;
+}
+.scroll-img{
+    width: 100%;
+    margin-top: 0%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+   
+}
+.scroll-img a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+.scroll-img a p{
+    width: 100%;
+   color: black;
+   font-family: font4;
+   font-size: 5rem;
+   margin-left: 15vw;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   letter-spacing: 0.05rem;
+   
+}
+
+.scroll-img a img{
+    width: 90%;
+    height: 100%;
+    border-radius: 1rem;
+    margin-left: 3vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.page6{
+    width: 100vw;
+    height: 100vh;
+    background-color: #CDEA68 ;
+}
+
+.page6 .page6-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 4;
+
+}
+
+.page6-container{
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.page6-text{
+    text-decoration: none;
+    font-family: font6,sans-serif;
+    font-size: 15rem;
+    
+    font-weight: 900;
+    line-height: 12rem;
+    color: #212121;
+    height: 175px;
+    overflow: hidden;
+    text-transform: uppercase;
+   
+}
+.page6-text.github{
+ margin-right: 4rem;
+}
+
+
+
+.page6-container div{
+    display: flex;
+}
+
+.page6-text:hover .letter,
+.page6-text.play .letter{
+    transform: translateY(-100%);
+}
+
+.page6-text .letter{
+    display: inline-block;
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0, 0.24);
+}
+
+.letter:nth-last-child(1){
+    transition-delay: 0s;
+}
+.letter:nth-last-child(2){
+    transition-delay: 0.015s;
+}
+.letter:nth-last-child(3){
+    transition-delay: 0.03s;
+}
+.letter:nth-last-child(4){
+    transition-delay: 0.045s;
+}
+.letter:nth-last-child(5){
+    transition-delay: 0.06s;
+}
+.letter:nth-last-child(6){
+    transition-delay: 0.075s;
+}
+.letter:nth-last-child(7){
+    transition-delay: 0.09s;
+}
+.letter:nth-last-child(8){
+    transition-delay: 0.105s;
+}
+.letter:nth-last-child(9){
+    transition-delay: 0.12s;
+}
+.letter:nth-last-child(10){
+    transition-delay: 0.135s;
+}
+.letter:nth-last-child(11){
+    transition-delay: 0.15s;
+}
+.letter:nth-last-child(12){
+    transition-delay: 0.165s;
+}
